@@ -2,7 +2,7 @@
 
 A **Page Object Model (POM)** file can be used when you want to make your test code scalable, maintainable, and reusable — especially in projects with growing UI complexity or multiple test contributors.
 
-Use **POM** when building tests that need to be reused, scaled, and maintained — especially in Agile/CI environments where changes might be frequent.
+Use **POM** when building tests that need to be reused, scaled, and maintained — especially in Agile/CI environments where changes might be frequent. [Read more about creating POM's](BuildPOM.md)
 
 ### When to Use a POM File
 

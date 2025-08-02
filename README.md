@@ -1,16 +1,16 @@
 # Playwright – Scalability, Reusability, and Maintainability
 
-This repository is a starter **Playwright project** with TypeScript, designed for **scalability, reusability, and maintainability**. It follows the practices with a Page Object Model (POM), modular folder structure, ESLint, Prettier, and a pre-configured CI pipeline using GitHub Actions.
+This repository is a starter **Playwright project** with TypeScript, designed for **scalability, reusability, and maintainability**. It follows best practices with a Page Object Model (POM), modular folder structure, ESLint, Prettier, and a pre-configured CI pipeline using GitHub Actions. [Read more about POM](PageObjectModel.md)
 
-The test project uses various test sites and API's to demonstrate the idea of starting a foundation for building robust test frameworks and scripts that support long-term quality goals with clear separation of concerns.
+The test project uses various test sites and API's to demonstrate the idea of starting a foundation for building robust test framework with clear separation of concerns.
 
-Test automation delivers the greatest value when it is ***reusable, maintainable, and scalable***. In today’s environment, teams strive to build software efficiently, automation helps maximize productivity and minimize rework by streamlining repetitive tasks. [Read more about this]()
+Test automation delivers the greatest value when it is ***reusable, maintainable, and scalable***. In today’s environment, teams strive to build software efficiently and automation helps maximize productivity and minimize rework by streamlining repetitive tasks.
 
 ---
 
 ## Project Structure
 Benefits:
-- Clear separation of concerns (tests, page objects, utilities, configs)
+- Clear separation of concerns (configs, data, page objects, tests..)
 - Easy onboarding for new team members
 ```
 playwright-project/
@@ -57,8 +57,8 @@ playwright-project/
 
 ### 1️ Clone the Repository
 ```bash
-git clone https://github.com/jeffvg/UPDATE-TODO.git
-cd playwright-project
+git clone https://github.com/jeffvg/playwright-scaled.git
+cd playwright-scaled
 ```
 
 ### 2️ Install Dependencies
@@ -137,8 +137,3 @@ Location: `.github/workflows/ci.yml`
 | Run all test and exclude by tag             | `npx playwright test --grep regression --grep-invert`           |
 
 Visit https://playwright.dev/docs/intro for more information.
-
----
-
-## License
-MIT License © 2025

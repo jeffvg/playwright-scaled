@@ -20,7 +20,7 @@ export class TransferFundsPage {
       'input#toAccountId,input[name="toAccountId"]',
     );
     this.transferButton = page.locator('input[type="submit"]');
-    this.confirmationMessage = page.locator('.title').nth(1);
+    this.confirmationMessage = page.locator('.title').filter({ hasText: 'Transfer Complete!' }).first();
   }
 
   async navigate() {
@@ -37,6 +37,11 @@ export class TransferFundsPage {
   }
 
   async verifyTransferSuccess() {
-    await this.confirmationMessage.waitFor({ state: 'visible' });
+    // Wait for the confirmation message to be attached to the DOM
+    await this.confirmationMessage.waitFor({ state: 'attached' });
+    // Check if the confirmation message is visible
+    if (!(await this.confirmationMessage.isVisible())) {
+      throw new Error('Transfer confirmation message is not visible.');
+    }
   }
 }
