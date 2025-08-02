@@ -30,11 +30,11 @@ test.describe('@smoke Parabank Transfer Funds Tests With POM', () => {
   //   await transferFundsPage.verifyLoaded();
   //   await transferFundsPage.amountInput.fill('100');
   //   await transferFundsPage.transferButton.click();
-    // await transferFundsPage.verifyTransferSuccess();
-    // await expect(transferFundsPage.confirmationMessage).toContainText(
-    //   'Transfer Complete',
-    // );
-    // test could continue and verify the account balances using the Account Overview Page
-    // For now, we just check the transfer complete confirmation message.
+  // await transferFundsPage.verifyTransferSuccess();
+  // await expect(transferFundsPage.confirmationMessage).toContainText(
+  //   'Transfer Complete',
+  // );
+  // test could continue and verify the account balances using the Account Overview Page
+  // For now, we just check the transfer complete confirmation message.
   // });
 });

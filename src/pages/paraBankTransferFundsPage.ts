@@ -20,7 +20,10 @@ export class TransferFundsPage {
       'input#toAccountId,input[name="toAccountId"]',
     );
     this.transferButton = page.locator('input[type="submit"]');
-    this.confirmationMessage = page.locator('.title').filter({ hasText: 'Transfer Complete!' }).first();
+    this.confirmationMessage = page
+      .locator('.title')
+      .filter({ hasText: 'Transfer Complete!' })
+      .first();
   }
 
   async navigate() {
