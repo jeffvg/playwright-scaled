@@ -44,3 +44,11 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report
+
+      - name: Publish Playwright HTML Report to PR
+        if: always() && github.event_name == 'pull_request'
+        uses: mikepenz/action-junit-report@v4
+        with:
+          report_paths: 'playwright-report/*.xml'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          check_name: 'Playwright Test Report'
