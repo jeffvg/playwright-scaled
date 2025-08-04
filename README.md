@@ -107,7 +107,7 @@ npx playwright show-report
 ---
 
 ## Continuous Integration (CI)
-The GitHub Actions workflow runs tests on every **push** and **pull request** to the `main` branch.
+The GitHub Actions workflow runs tests on every **push** and **pull request** to the `master` branch.
 
 Location: `.github/workflows/ci.yml`
 
