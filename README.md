@@ -41,7 +41,7 @@ playwright-project/
 │   │   ├── ui/                       # Visual/interactive elements
 │   │   │   └── basic-ui-test.spec.ts
 │   │   ├── wacg/                     # Accessibility tests
-│   │   │   └── basic-ui-test.spec.ts
+│   │   │   └── pw-accessibility.spec.spec.ts
 │   └── playwright.config.ts          # Playwright global config
 ├── .gitignore                        # Don’t track these items
 ├── eslint.config.ts                  # ESLint configuration
