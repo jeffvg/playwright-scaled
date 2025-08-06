@@ -32,13 +32,12 @@ Use **POM** when building tests that need to be reused, scaled, and maintained â
 | The UI still changes occasionally.	                                  | Updating one POM file is far easier than modifying dozens of tests     |
 | Existing test code is fragile or inconsistent.	                      | Refactoring with POM improves stability and readability                |
 | You still need regression coverage or critical-path automation.	      | POM makes tests easier to maintain over time                           |
-| Multiple team members (QA/devs) need to update/understand test code.    | POM improves collaboration and maintainability                         |
 
-## When you *may not need POM* for older or maintenance-mode mpplications
+## When you *may not need POM* for older or maintenance-mode applications
 
 | Example Condition                                        | Reason                                                                 |
 |----------------------------------------------------------|------------------------------------------------------------------------|
-| UI is completely frozen and won't change.                | Duplicated selectors may be tolerable if thereâ€™s no maintenance burden |
+| UI and app are completely frozen and won't change.       |                                                                        |
 | App is legacy and being phased out soon.                 | ROI of refactoring tests with POM may not be worth it                  |
 | Only a small set of manual smoke tests are automated.    | POM abstraction might add unnecessary complexity                       |
 | Test automation is minimal, and no CI/CD is planned.     | Simpler scripts may be sufficient for low-risk testing                 |
